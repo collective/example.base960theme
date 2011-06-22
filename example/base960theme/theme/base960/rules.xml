@@ -2,9 +2,6 @@
 <rules xmlns="http://namespaces.plone.org/diazo" xmlns:css="http://namespaces.plone.org/diazo/css">
 
     <theme href="one-column.html" />
-    <theme href="three-column.html" css:if-content="body.template-manage-portlets"/>
-<!--     <theme href="three-column.html" css:if-content="body.template-manage-portlets"/> -->
-<!--     <theme href="three-column.html" css:if-content="body.template-manage-portlets"/> -->
     <theme href="three-column.html" if="$have_both_portlets"/>
     <theme href="two-column-left.html" if="$have_left_portlets"/>
     <theme href="two-column-right.html" if="$have_right_portlets"/>
@@ -26,13 +23,10 @@
 
 <!-- header -->
     <append css:content="#portal-logo" css:theme="#logo"/>
-<!--     <drop css:content="#portal-searchbox .searchSection"/> -->
     <append css:content="#portal-languageselector" css:theme="#tools" />
     <append css:content="#portal-personaltools-wrapper" css:theme="#tools"/>
     <append css:content='#portal-searchbox' css:theme='#tools' />
-
-<!-- navbar -->
-    <replace css:theme="#portal-globalnav" css:content="#portal-globalnav"/>
+    <append css:content-children="#portal-globalnav" css:theme="#portal-globalnav"/>
 
 <!-- CONTENT -->
     <append css:content-children="#portal-column-content" css:theme="#portal-column-content"/>

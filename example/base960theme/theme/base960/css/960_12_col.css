@@ -4,7 +4,11 @@
 
   Licensed under GPL and MIT.
 */
-
+/*
+   Customized version for example.base960theme.
+   The only modification is on body because of tinymce overlay have a fixed 
+   width to 960px but with inline width, so we have a horizontal scroll bar.
+*/
 /*
   Forces backgrounds to span full width,
   even if there is horizontal scrolling.
