@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+ <object name="example_base960theme"
+    meta_type="Filesystem Directory View"
+    directory="example.base960theme:skins/example_base960theme"/>
+ <skin-path name="Sunburst">
+  <layer name="example_base960theme"
+     insert-after="custom"/>
+ </skin-path>
+</object>

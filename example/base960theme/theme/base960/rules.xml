@@ -3,6 +3,8 @@
 
     <theme href="one-column.html" />
     <theme href="three-column.html" css:if-content="body.template-manage-portlets"/>
+<!--     <theme href="three-column.html" css:if-content="body.template-manage-portlets"/> -->
+<!--     <theme href="three-column.html" css:if-content="body.template-manage-portlets"/> -->
     <theme href="three-column.html" if="$have_both_portlets"/>
     <theme href="two-column-left.html" if="$have_left_portlets"/>
     <theme href="two-column-right.html" if="$have_right_portlets"/>
@@ -24,25 +26,21 @@
 
 <!-- header -->
     <append css:content="#portal-logo" css:theme="#logo"/>
-    <replace css:content='#portal-searchbox' css:theme-children='#searchbox' />
-    <drop css:content="#portal-searchbox .searchSection"/>
-    <drop css:theme="#langselector ul"/>
-    <append css:content="#portal-languageselector" css:theme="#langselector" />
-    <drop attributes="id" css:content="#portal-languageselector"/>
-    <before css:content="#portal-personaltools-wrapper" css:theme="#globmslinks"/>
+<!--     <drop css:content="#portal-searchbox .searchSection"/> -->
+    <append css:content="#portal-languageselector" css:theme="#tools" />
+    <append css:content="#portal-personaltools-wrapper" css:theme="#tools"/>
+    <append css:content='#portal-searchbox' css:theme='#tools' />
 
 <!-- navbar -->
-    <drop css:theme="#main-nav li"/>
-    <append css:content="#portal-globalnav li" css:theme="#main-nav"/>
-<!--     <append css:content-children="#portal-breadcrumbs" css:theme="#portal-breadcrumbs"/> -->
-    <drop if-path="/Plone/" css:theme="#portal-breadcrumbs"/>
-
+    <replace css:theme="#portal-globalnav" css:content="#portal-globalnav"/>
 
 <!-- CONTENT -->
     <append css:content-children="#portal-column-content" css:theme="#portal-column-content"/>
     <append css:content-children="#portal-column-one" css:theme="#portal-column-one" />
     <append css:content-children="#portal-column-two" css:theme="#portal-column-two" />
-
+    <append css:content-children="#portal-footer" css:theme="#portal-footer" />
+    <append css:content-children="#portal-colophon" css:theme="#portal-colophon" />
+    <append css:content-children="#portal-siteactions" css:theme="#portal-siteactions" />
 
 <!--  footer -->
 
