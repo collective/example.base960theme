@@ -5,4 +5,7 @@
  <stylesheet title=""
     id="++theme++example.base960theme/css/project.css" 
      expression="request/HTTP_X_THEME_ENABLED | nothing" />
+ <stylesheet title=""
+    id="columns.css" 
+    expression="not:request/HTTP_X_THEME_ENABLED | nothing" />
 </object>

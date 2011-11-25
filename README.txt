@@ -52,13 +52,20 @@ Tricks
 
 You will find many css tricks with google by using 960 in your search terms.
 
+How to use this add-on ?
+------------------------
+
+Just copy paste the theme folder in your new plonetheme add-on, and update
+your profile / zcml.
+
+
 CSS fixes in this add-on
 ------------------------
 
 In this add-on there is few fixes (yes the default Plone theme rocks)
 
 * fix z-index of some drop down menu with the livesearch
-* fix globalnav margin because its override the 960 grids
+* fix globalnav margin because it overrides the 960 grid's margin
 
 How do I use 960 Grid System with borders?
 ------------------------------------------
